@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tye - Home</title>
+    
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+      nav {
+        top: 0px;
+        left: 0px;
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      *[select-disabled] {
+        user-select: none;
+      }
+      body {
+        background-color: rgb(33, 33, 33);
+
+        font-family: "Comfortaa";
+      }
+      #sidebar {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: rgba(255, 255, 255, 0.145);
+        height: 100%;
+        width: 85px;
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;
+      }
+      #sidebar a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5px;
+        margin: 4px;
+      }
+      #sidebar img[round] {
+        border-radius: 10px;
+      }
+      #NBMOL {
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        top: calc(100% - 200px);
+      }
+      #NBMOL p {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0px;
+        padding: 0px;
+      }
+      #account {
+        position: relative;
+        top: calc(100% - 250px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      #content p{
+        background-color: rgba(255, 255, 255, 0.123);
+        padding: 10px;
+        border-radius: 5px;
+      }
+      #content{
+        position: fixed;
+        top:0px;
+        left:85px;
+        height: 100%;
+        width: calc(100% - 85px);
+        overflow-y: scroll;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sidebar" class="sidebar">
+      <a href="/" select-disabled title="Home">
+        <img
+          draggable="false"
+          round
+          src="/favicon.ico"
+          height="45px"
+          width="45px"
+        />
+      </a>
+      <div id="account">
+        <a select-disabled href="/account?t=0" title="Sign Up">
+          <img
+            draggable="false"
+            src="/signup.icon"
+            height="22px"
+            width="22px"
+          />
+        </a>
+        <a select-disabled href="/account?t=1" title="Log In">
+          <img
+            draggable="false"
+            select-disabled
+            src="/login.icon"
+            height="22px"
+            width="22px"
+          />
+        </a>
+      </div>
+      <ol id="NBMOL">
+        <p select-disabled>T</p>
+        <p select-disabled>y</p>
+        <p select-disabled>e</p>
+      </ol>
+    </div>
+    <div id="content">
+      <p minitxt>
+        Tye is the media platform for you!<br>
+         All you need is an E-Mail!
+        </p>
+        <p minitxt>
+          Tye can make threads and posts, including images, questions, and cute dog images!
+          </p>
+    </div>
+  </body>
+</html>

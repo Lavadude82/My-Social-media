@@ -1,0 +1,16 @@
+{
+    "name": "Tye",
+    "short_name": "Tye",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+      {
+        "src": "/favicon.ico",
+        "sizes": "320x320",
+        "type": "image/png"
+      }
+    ]
+  }
+  
